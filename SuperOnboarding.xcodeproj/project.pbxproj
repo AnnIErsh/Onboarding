@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 56;
+	objectVersion = 60;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -11,6 +11,8 @@
 		E7866BCC2B40CA9A00A2CC5D /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E7866BCB2B40CA9A00A2CC5D /* ContentView.swift */; };
 		E7866BCE2B40CAA000A2CC5D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E7866BCD2B40CAA000A2CC5D /* Assets.xcassets */; };
 		E7866BD12B40CAA000A2CC5D /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E7866BD02B40CAA000A2CC5D /* Preview Assets.xcassets */; };
+		E7866BDF2B40D2C400A2CC5D /* Navigation in Frameworks */ = {isa = PBXBuildFile; productRef = E7866BDE2B40D2C400A2CC5D /* Navigation */; };
+		E7866BE12B40D67500A2CC5D /* MainScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = E7866BE02B40D67500A2CC5D /* MainScreen.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -19,6 +21,7 @@
 		E7866BCB2B40CA9A00A2CC5D /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		E7866BCD2B40CAA000A2CC5D /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		E7866BD02B40CAA000A2CC5D /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		E7866BE02B40D67500A2CC5D /* MainScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainScreen.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -26,6 +29,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E7866BDF2B40D2C400A2CC5D /* Navigation in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -51,6 +55,9 @@
 		E7866BC82B40CA9A00A2CC5D /* SuperOnboarding */ = {
 			isa = PBXGroup;
 			children = (
+				E7866BD92B40CAE900A2CC5D /* viewmodels */,
+				E7866BD82B40CADC00A2CC5D /* models */,
+				E7866BD72B40CACE00A2CC5D /* screens */,
 				E7866BC92B40CA9A00A2CC5D /* SuperOnboardingApp.swift */,
 				E7866BCB2B40CA9A00A2CC5D /* ContentView.swift */,
 				E7866BCD2B40CAA000A2CC5D /* Assets.xcassets */,
@@ -65,6 +72,28 @@
 				E7866BD02B40CAA000A2CC5D /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		E7866BD72B40CACE00A2CC5D /* screens */ = {
+			isa = PBXGroup;
+			children = (
+				E7866BE02B40D67500A2CC5D /* MainScreen.swift */,
+			);
+			path = screens;
+			sourceTree = "<group>";
+		};
+		E7866BD82B40CADC00A2CC5D /* models */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = models;
+			sourceTree = "<group>";
+		};
+		E7866BD92B40CAE900A2CC5D /* viewmodels */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = viewmodels;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -83,6 +112,9 @@
 			dependencies = (
 			);
 			name = SuperOnboarding;
+			packageProductDependencies = (
+				E7866BDE2B40D2C400A2CC5D /* Navigation */,
+			);
 			productName = SuperOnboarding;
 			productReference = E7866BC62B40CA9A00A2CC5D /* SuperOnboarding.app */;
 			productType = "com.apple.product-type.application";
@@ -111,6 +143,9 @@
 				Base,
 			);
 			mainGroup = E7866BBD2B40CA9A00A2CC5D;
+			packageReferences = (
+				E7866BDD2B40D2C400A2CC5D /* XCLocalSwiftPackageReference "Navigation" */,
+			);
 			productRefGroup = E7866BC72B40CA9A00A2CC5D /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -137,6 +172,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E7866BE12B40D67500A2CC5D /* MainScreen.swift in Sources */,
 				E7866BCC2B40CA9A00A2CC5D /* ContentView.swift in Sources */,
 				E7866BCA2B40CA9A00A2CC5D /* SuperOnboardingApp.swift in Sources */,
 			);
@@ -344,6 +380,20 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCLocalSwiftPackageReference section */
+		E7866BDD2B40D2C400A2CC5D /* XCLocalSwiftPackageReference "Navigation" */ = {
+			isa = XCLocalSwiftPackageReference;
+			relativePath = Navigation;
+		};
+/* End XCLocalSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		E7866BDE2B40D2C400A2CC5D /* Navigation */ = {
+			isa = XCSwiftPackageProductDependency;
+			productName = Navigation;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = E7866BBE2B40CA9A00A2CC5D /* Project object */;
 }
