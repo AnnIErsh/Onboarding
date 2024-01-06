@@ -6,3 +6,11 @@
 //
 
 import Foundation
+
+enum TextTabModel: String, CaseIterable {
+    case begin = "INIZIA"
+    case next = "АССЕТТА"
+    case back = "RIFIUTA"
+    case finish = "END"
+    case empty = ""
+}

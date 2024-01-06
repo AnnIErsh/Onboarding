@@ -8,11 +8,15 @@
 import SwiftUI
 
 struct MainScreen: View {
+    @State var isPresented: Bool = false
+
     var body: some View {
-        Text("Main")
+        VStack {
+            Button("Start") {
+                isPresented.toggle()
+            }
+            .showSlides(isPresented: $isPresented, screen: OnboardScreen($isPresented).lazy.toAnyView)
+        }
+        .padding()
     }
 }
-
-//#Preview {
-//    MainScreen()
-//}
